@@ -15,11 +15,19 @@ function renderStartTimer () {
     </div>
     `;
 
-    document.getElementById("start").addEventListener("click", stopTimer());
+    document.getElementById("start").addEventListener("click", toggleTimer);
 
 }
 
-function stopTimer() {
-    document.getElementById("start").outerHTML = `<button id=start>Stop</button>`;
-    
+function toggleTimer() {
+
+
+    if(document.getElementById("start").textContent === "Start") {
+        document.getElementById("start").textContent = "Stop"
+        //Timer pauses 
+    } else {
+        document.getElementById("start").textContent = "Start"
+        //Timer starts
+    }
+
 }

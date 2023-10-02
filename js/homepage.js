@@ -18,6 +18,6 @@ function renderHomePage () {
     <button id=next>Let's get started!</button>
     `;
 
-    document.getElementById("next").addEventListener("click", renderEggPage());
+    document.getElementById("next").addEventListener("click", renderEggPage);
 
 }
