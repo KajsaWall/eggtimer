@@ -6,7 +6,7 @@ function renderHomePage () {
     
     <div id="homePage">
         <h3>Let's get cooking!</h3>
-        <p>Put your egg in after the water starts boiling!"
+        <p>Put your egg into the boiling water!"
     </div>
     <button id=next>Next</button>
     `;
