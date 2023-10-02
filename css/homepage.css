@@ -4,16 +4,51 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    margin-top: 100px;
 }
 
 .line {
     height: 3px;
-    width: 90%;
+    width: 70%;
     background-color: rgba(0, 0, 0, 0.562);
 }
 
 #startInfo {
     height: 400px;
-    width: 90%;
+    width: 80%;
     background-color: #00000014;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: Arial;
+}
+
+#startInfo > p {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#startInfo > div:nth-child(2) {
+    background-image: url("../Media/boilingWater.png");
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#next {
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 60px;
+    margin: auto;
+    font-size: 20px;
+    font-family: arial;
+    border-radius: 10px;
+    border: none;
+    background-color: #0000004a;
+    cursor: pointer;
 }
