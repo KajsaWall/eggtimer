@@ -1,4 +1,19 @@
 #homePage {
     height: 500px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.line {
+    height: 3px;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+#startInfo {
+    height: 400px;
+    width: 90%;
+    background-color: #00000014;
 }
