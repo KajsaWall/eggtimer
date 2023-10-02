@@ -48,9 +48,15 @@ const combinations = [
     }
 ];
 
+// Define variables to store selected buttons and combination
+let selectedSizeButton = null;
+let selectedHardnessButton = null;
+let selectedCombination = null;
+
 function renderEggPage() {
     document.querySelector("main").innerHTML = `
     <div id="eggPage">
+
         <div id="eggSize">
             <p>Select size of your egg</p>
             <div>
@@ -68,21 +74,24 @@ function renderEggPage() {
                 </div>
             </div>
         </div>
+
+        <div class="line"></div>
+
         <div id="eggHardness">
             <p>Select hardness of your egg</p>
             <div>
                 <div>
-                    <div class="eggImage">
+                    <div class="eggImageSoft">
                     </div>
                     <button id="soft">Soft</button>
                 </div>
                 <div>
-                    <div class="eggImage">
+                    <div class="eggImageMedium">
                     </div>
                     <button id="medium">Medium</button>
                 </div>
                 <div>
-                    <div class="eggImage">
+                    <div class="eggImageHard">
                     </div>
                     <button id="hard">Hard</button>
                 </div>
@@ -101,6 +110,17 @@ function renderEggPage() {
             eggSizeButtons.forEach(btn => btn.classList.remove("marked"));
             // Add "marked" class to the clicked button
             button.classList.add("marked");
+            // Set the selectedSizeButton
+            selectedSizeButton = button;
+
+            // Check if both egg size and hardness have been selected
+            if (selectedSizeButton && selectedHardnessButton) {
+                // Find the combination in the predefined array
+                selectedCombination = combinations.find(
+                    combo => combo.eggSize === selectedSizeButton.textContent.trim() &&
+                              combo.eggHardness === selectedHardnessButton.textContent.trim()
+                );
+            }
         });
     });
 
@@ -110,8 +130,20 @@ function renderEggPage() {
             eggHardnessButtons.forEach(btn => btn.classList.remove("marked"));
             // Add "marked" class to the clicked button
             button.classList.add("marked");
+            // Set the selectedHardnessButton
+            selectedHardnessButton = button;
+
+            // Check if both egg size and hardness have been selected
+            if (selectedSizeButton && selectedHardnessButton) {
+                // Find the combination in the predefined array
+                selectedCombination = combinations.find(
+                    combo => combo.eggSize === selectedSizeButton.textContent.trim() &&
+                              combo.eggHardness === selectedHardnessButton.textContent.trim()
+                );
+            }
         });
     });
 
+    console.log(selectedCombination);
     document.getElementById("next").addEventListener("click", renderStartTimer);
 }
