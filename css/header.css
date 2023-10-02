@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Sigmar One;
+    src: url("../Media/fonts/Sigmar_One/SigmarOne-Regular.ttf");
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    font-family: Sigmar One;
+    margin-top: 40px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 47px;
+}
+
+header p {
+    font-size: 14px;
+    margin-top: -10px;
+    text-align: center;
+}
