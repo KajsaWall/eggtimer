@@ -11,6 +11,6 @@ function renderHomePage () {
     <button id=next>Next</button>
     `;
 
-    document.getElementById("next").addEventListener("click", render)
+    document.getElementById("next").addEventListener("click", renderEggPage());
 
 }
