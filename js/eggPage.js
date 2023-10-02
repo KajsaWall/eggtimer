@@ -9,15 +9,15 @@ function renderEggPage() {
         <div id="eggSize">
             <p>Select size of your egg</p>
             <div>
-                <div class="small">
+                <div class="s">
                     <button>S</button>
                     <p>"<50g"</p>
                 </div>
-                <div class="medium">
+                <div class="m">
                     <button>M</button>
                     <p>"60g"</p>
                 </div>
-                <div class="large">
+                <div class="l">
                     <button>L</button>
                     <p>">70g"</p>
                 </div>

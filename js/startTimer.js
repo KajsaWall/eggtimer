@@ -8,8 +8,7 @@ function renderStartTimer () {
 
         <div id="bigEggImage>
         </div>
-        <div id="timer">
-        </div>
+        <p id="timer"></p>
         <button id=start>Start</button>
 
     </div>
