@@ -1,5 +1,53 @@
 "use strict";
 
+const combinations = [
+    {
+        eggSize: "S",
+        eggHardness: "Soft",
+        message: "6"
+    },
+    {
+        eggSize: "S",
+        eggHardness: "Medium",
+        message: "8"
+    },
+    {
+        eggSize: "S",
+        eggHardness: "Hard",
+        message: "10"
+    },
+    {
+        eggSize: "M",
+        eggHardness: "Soft",
+        message: "7"
+    },
+    {
+        eggSize: "M",
+        eggHardness: "Medium",
+        message: "9"
+    },
+    {
+        eggSize: "M",
+        eggHardness: "Hard",
+        message: "11"
+    },
+    {
+        eggSize: "L",
+        eggHardness: "Soft",
+        message: "8"
+    },
+    {
+        eggSize: "L",
+        eggHardness: "Medium",
+        message: "10"
+    },
+    {
+        eggSize: "L",
+        eggHardness: "Hard",
+        message: "12"
+    }
+];
+
 function renderEggPage() {
     document.querySelector("main").innerHTML = `
     <div id="eggPage">
