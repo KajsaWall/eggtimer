@@ -44,6 +44,7 @@ function toggleTimer() {
                 clearInterval(timerInterval); // Clear the interval when time reaches 0
                 document.getElementById("start").textContent = "Start";
                 isTimerRunning = false;
+                renderDoneTimer();
             }
         }
 
