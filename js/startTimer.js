@@ -32,10 +32,11 @@ function toggleTimer() {
         }
 
         function updateCountdown() {
-            const minutes = Math.floor(remainingTime / 60);
+            let minutes = Math.floor(remainingTime / 60);
             let seconds = remainingTime % 60;
 
             seconds = seconds < 10 ? `0` + seconds : seconds;
+            minutes = minutes < 10 ? `0` + minutes : minutes;
 
             countdownElement.textContent = `${minutes}:${seconds}`;
             remainingTime--;

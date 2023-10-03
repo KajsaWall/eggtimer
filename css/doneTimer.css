@@ -1,0 +1,15 @@
+.blinkingButton {
+    animation: blink-animation 1s infinite; /* Use the blink-animation with a 1-second duration, repeated infinitely */
+}
+
+@keyframes blink-animation {
+    0% {
+        opacity: 1; /* Start with full opacity */
+    }
+    50% {
+        opacity: 0.5; /* Fade out at 50% of the animation */
+    }
+    100% {
+        opacity: 1; /* Back to full opacity at the end of the animation */
+    }
+}
