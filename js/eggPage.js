@@ -4,7 +4,7 @@ const combinations = [
     {
         eggSize: "S",
         eggHardness: "Soft",
-        message: "0.5"
+        message: "0.2"
     },
     {
         eggSize: "S",

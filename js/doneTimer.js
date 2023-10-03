@@ -2,6 +2,10 @@
 
 function renderDoneTimer () {
 
+    const audio = new Audio();
+    audio.src = "./Media/alarm.mp4";
+    audio.play();
+
     document.querySelector("main").innerHTML = `
     
     <div id="doneTimer">
@@ -11,8 +15,9 @@ function renderDoneTimer () {
     </div>
     `;
 
-    document.getElementById("done").addEventListener("click", renderEggPage);
-    //document.querySelector("button").removeAttribute(id);
-    //document.querySelector("button").classList.remove("blinkingButton");
+    document.getElementById("done").addEventListener("click", function (event) {
+        audio.pause();
+        renderEggPage();
+    });
 
 }

@@ -5,11 +5,22 @@ let isTimerRunning = false; // Flag to track whether the timer is running or pau
 let startingMinutes = 0; // Initial starting time in minutes
 let remainingTime = 0; // Variable to store the remaining time
 
+
 function renderStartTimer() {
+
+    
+ timerInterval; // Variable to store the interval ID
+ isTimerRunning = false; // Flag to track whether the timer is running or paused
+ startingMinutes = 0; // Initial starting time in minutes
+ remainingTime = 0; // Variable to store the remaining time
+
+    let startTime = selectedCombination.message;
+    startTime = startTime < 10 ? `0` + startTime : startTime;
+
     document.querySelector("main").innerHTML = `
     <div id="startTimer">
         <div id="bigEggImage"></div>
-        <p id="timer"></p>
+        <p id="timer">${startTime + ":00"}</p>
         <button id="start">Start</button>
     </div>
     `;
