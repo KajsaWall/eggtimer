@@ -147,4 +147,5 @@ function renderEggPage() {
 
     console.log(selectedCombination);
     document.getElementById("next").addEventListener("click", renderStartTimer);
+    document.getElementById("backButton").addEventListener("click", renderHomePage);
 }

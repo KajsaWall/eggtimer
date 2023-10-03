@@ -16,6 +16,7 @@ function renderStartTimer() {
     `;
 
     document.getElementById("start").addEventListener("click", toggleTimer);
+    document.getElementById("backButton").addEventListener("click", renderEggPage);
 }
 
 function toggleTimer() {
