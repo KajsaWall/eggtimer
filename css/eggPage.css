@@ -3,13 +3,18 @@
     src: url("../Media/fonts/Dosis/Dosis-VariableFont_wght.ttf");
 }
 
+@font-face {
+    font-family: Mada;
+    src: url("../Media/fonts/Mada/Mada-VariableFont_wght.ttf");
+}
+
+
 #eggPage {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     margin-top: 40px;
-    font-family: arial;
     text-align: center;
 }
 
@@ -19,25 +24,19 @@
     gap: 37px;
 }
 
-#s, #m, #l {
+div > div > div > div button {
     height: 65px;
     width: 85px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-}
-
-#soft, #medium, #hard {
-    height: 65px;
-    width: 85px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     cursor: pointer;
     border: none;
     border-radius: 10px;
     margin-top: 10px;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.04);
+    font-family: Mada;
 }
 
 #eggSize > p:nth-child(1),
@@ -45,10 +44,11 @@
     margin-bottom: 40px;
     margin-top: 10px;
     font-size: 25px;
+    font-family: Mada;
 }
 
 .eggImageSoft {
-    background-image: url("../Media/soft-boiled-egg.png");
+    background-image: url("../Media/soft-boiled-eggv2.png");
     height: 90px;
     background-position: center;
     background-size: contain;
@@ -56,7 +56,7 @@
 }
 
 .eggImageMedium {
-    background-image: url("../Media/medium-boiled-egg.png");
+    background-image: url("../Media/medium-boiled-eggv2.png");
     height: 90px;
     background-position: center;
     background-size: contain;
@@ -64,7 +64,7 @@
 }
 
 .eggImageHard {
-    background-image: url("../Media/hard-boiled-egg.png");
+    background-image: url("../Media/hard-boiled-eggv2.png");
     height: 90px;
     background-position: center;
     background-size: contain;
@@ -81,5 +81,10 @@
     font-family: Dosis;
     font-weight: 500;
     margin: 0;
+    color: #d7d3d3;
 }
 
+.marked {
+    background-color: #e0e0e0;
+    color: #fff;
+}

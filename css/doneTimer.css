@@ -26,8 +26,9 @@
     font-family: arial;
     border-radius: 10px;
     border: none;
-    background-color: #0000004a;
+    background-color: #FB7A71;
     cursor: pointer;
+    color:white;
 }
 
 #doneTimer {

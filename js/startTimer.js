@@ -35,6 +35,7 @@ function toggleTimer() {
 
     if (!isTimerRunning) {
         // Timer starts or resumes
+        document.getElementById("start").classList.add("pause");
         document.getElementById("start").textContent = "Stop";
         isTimerRunning = true;
 
@@ -70,5 +71,6 @@ function toggleTimer() {
         document.getElementById("start").textContent = "Start";
         clearInterval(timerInterval); // Clear the interval when pausing
         isTimerRunning = false;
+        document.getElementById("start").classList.remove("pause");
     }
 }

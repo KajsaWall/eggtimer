@@ -1,6 +1,3 @@
-.marked {
-    background-color: #0000008a;
-}
 
 #start {
     position: absolute;
@@ -15,8 +12,11 @@
     border-radius: 10px;
     border: none;
     background-color: #0000004a;
+    color: white;
     cursor: pointer;
     background-color: #FFBF75;
+    transition-property: background-color;
+    transition-duration: 1s;
 }
 
 #timer {
@@ -25,10 +25,10 @@
     align-items: center;
     font-size: 45px;
     margin-top: 0px;
+    font-family: Mada;
 }
 
 #bigEggImage {
-    border: solid black 1px;
     height: 500px;
     width: 350px;
     align-self: center;
@@ -46,4 +46,8 @@
     margin-top: 40px;
     font-family: arial;
     text-align: center;
+}
+
+#start.pause {
+    background-color: #FB7A71;
 }
