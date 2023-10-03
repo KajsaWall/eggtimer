@@ -4,7 +4,7 @@ const combinations = [
     {
         eggSize: "S",
         eggHardness: "Soft",
-        message: "0.2"
+        message: "6"
     },
     {
         eggSize: "S",
@@ -76,7 +76,7 @@ function renderEggPage() {
             </div>
         </div>
 
-        <div class="line"></div>
+        <div id="middleLine"></div>
 
         <div id="eggHardness">
             <p>Select hardness of your egg</p>
