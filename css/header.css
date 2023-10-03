@@ -23,6 +23,8 @@ header {
     margin-top: 0px;
     width: 110%;
     align-self: center;
+    position: fixed;
+    top: 10px;
 }
 
 header h1 {

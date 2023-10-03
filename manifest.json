@@ -1,0 +1,17 @@
+{
+    "name": "Eggtimer",
+    "short_name": "Eggtimer",
+    "start_url": "http://maumt.se/wdu/ht22/students/webapp_icon/eggtimer/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
