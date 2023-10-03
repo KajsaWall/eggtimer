@@ -8,7 +8,14 @@ body {
     justify-content: center;
     flex-direction: column;
     box-sizing: border-box;
-    margin:50px;
+    padding:50px;
+    margin: 0;
+    background-image: linear-gradient(#f8f7f7,#ededed);    
+    height: 100vh;
+}
+
+main {
+    height: 100%;
 }
 
 header {
@@ -23,6 +30,7 @@ header h1 {
     margin-bottom: 0;
     font-size: 50px;
     margin-top: 15px;
+    color: #FFBF75;
 }
 
 
@@ -30,4 +38,5 @@ header p {
     font-size: 15.5px;
     margin-top: -17px;
     text-align: center;
+    color:#FB7A71;
 }
