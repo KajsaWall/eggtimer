@@ -4,7 +4,7 @@ function renderDoneTimer () {
 
     document.querySelector("main").innerHTML = `
     
-    <div id="doneTimer>
+    <div id="doneTimer">
         <div id="bigEggImage"></div>
         <p id="timer">00:00</p>
         <button id="done" class="blinkingButton">Done</button>
@@ -12,5 +12,7 @@ function renderDoneTimer () {
     `;
 
     document.getElementById("done").addEventListener("click", renderEggPage);
+    //document.querySelector("button").removeAttribute(id);
+    //document.querySelector("button").classList.remove("blinkingButton");
 
 }

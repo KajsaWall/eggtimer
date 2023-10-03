@@ -29,8 +29,9 @@ function toggleTimer() {
         if (remainingTime === 0) {
             // If no remaining time, use the initial starting time
             startingMinutes = selectedCombination.message;
-            remainingTime = startingMinutes * 60;
         }
+
+        remainingTime = startingMinutes * 60; // Reset remainingTime to the initial value
 
         function updateCountdown() {
             let minutes = Math.floor(remainingTime / 60);
