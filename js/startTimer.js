@@ -7,6 +7,7 @@ let remainingTime = 0; // Variable to store the remaining time
 
 function renderStartTimer() {
     document.querySelector("main").innerHTML = `
+    <div id="backButton"> < </div>
     <div id="startTimer">
         <div id="bigEggImage"></div>
         <p id="timer"></p>

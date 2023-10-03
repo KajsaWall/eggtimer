@@ -66,3 +66,13 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+#backButton {
+    position: absolute;
+    top: 2%;
+    left: 12%;
+    font-size: 50px;
+    font-family: Arial;
+    cursor: pointer;
+}
+
