@@ -18,6 +18,7 @@ function renderStartTimer() {
     startTime = startTime < 10 ? `0` + startTime : startTime;
 
     document.querySelector("main").innerHTML = `
+    <div id="backButton"> < </div>
     <div id="startTimer">
         <div id="bigEggImage"></div>
         <p id="timer">${startTime + ":00"}</p>
@@ -26,6 +27,7 @@ function renderStartTimer() {
     `;
 
     document.getElementById("start").addEventListener("click", toggleTimer);
+    document.getElementById("backButton").addEventListener("click", renderEggPage);
 }
 
 function toggleTimer() {

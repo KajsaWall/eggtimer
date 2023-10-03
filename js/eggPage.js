@@ -55,6 +55,7 @@ let selectedCombination = null;
 
 function renderEggPage() {
     document.querySelector("main").innerHTML = `
+    <div id="backButton"> < </div>
     <div id="eggPage">
 
         <div id="eggSize">
@@ -146,4 +147,5 @@ function renderEggPage() {
 
     console.log(selectedCombination);
     document.getElementById("next").addEventListener("click", renderStartTimer);
+    document.getElementById("backButton").addEventListener("click", renderHomePage);
 }

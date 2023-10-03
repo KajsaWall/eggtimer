@@ -15,7 +15,7 @@
 
 #startInfo {
     height: 400px;
-    width: 80%;
+    width: 330px;
     background-color: #00000014;
     border-radius: 10px;
     box-sizing: border-box;
@@ -42,7 +42,7 @@
     bottom: 3%;
     left: 0;
     right: 0;
-    width: 80%;
+    width: 330px;
     height: 60px;
     margin: auto;
     font-size: 25px;
