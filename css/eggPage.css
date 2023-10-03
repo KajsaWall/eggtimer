@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Dosis;
+    src: url("../Media/fonts/Dosis/Dosis-VariableFont_wght.ttf");
+}
+
 #eggPage {
     height: 500px;
     display: flex;
@@ -69,10 +74,12 @@
 
 #backButton {
     position: absolute;
-    top: 2%;
+    top: 0;
     left: 11%;
-    font-size: 60px;
+    font-size: 80px;
     font-family: Arial;
     cursor: pointer;
+    font-family: Dosis;
+    font-weight: 500;
 }
 
