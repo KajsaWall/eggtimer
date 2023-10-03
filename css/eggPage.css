@@ -4,12 +4,11 @@
 }
 
 #eggPage {
-    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    margin-top: 80px;
+    margin-top: 40px;
     font-family: arial;
     text-align: center;
 }
@@ -45,7 +44,7 @@
 #eggHardness > p:nth-child(1) {
     margin-bottom: 40px;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .eggImageSoft {
@@ -74,12 +73,13 @@
 
 #backButton {
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 11%;
-    font-size: 80px;
+    font-size: 60px;
     font-family: Arial;
     cursor: pointer;
     font-family: Dosis;
     font-weight: 500;
+    margin: 0;
 }
 

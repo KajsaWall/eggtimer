@@ -7,18 +7,24 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    box-sizing: border-box;
+    margin:50px;
 }
 
 header {
     font-family: Sigmar One;
-    margin-top: 40px;
+    margin-top: 0px;
+    width: 110%;
+    align-self: center;
 }
 
 header h1 {
     text-align: center;
     margin-bottom: 0;
-    font-size: 51px;
+    font-size: 50px;
+    margin-top: 15px;
 }
+
 
 header p {
     font-size: 15.5px;

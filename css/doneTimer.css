@@ -13,3 +13,25 @@
         opacity: 1; /* Back to full opacity at the end of the animation */
     }
 }
+
+#done {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    width: 330px;
+    height: 60px;
+    margin: auto;
+    font-size: 25px;
+    font-family: arial;
+    border-radius: 10px;
+    border: none;
+    background-color: #0000004a;
+    cursor: pointer;
+}
+
+#doneTimer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

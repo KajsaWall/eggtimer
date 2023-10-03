@@ -1,3 +1,48 @@
 .marked {
     background-color: #0000008a;
 }
+
+#start {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    width: 330px;
+    height: 60px;
+    margin: auto;
+    font-size: 25px;
+    font-family: arial;
+    border-radius: 10px;
+    border: none;
+    background-color: #0000004a;
+    cursor: pointer;
+}
+
+#timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 45px;
+    margin-top: 0px;
+}
+
+#bigEggImage {
+    border: solid black 1px;
+    height: 500px;
+    width: 350px;
+    align-self: center;
+    background-image: url("../Media/egg.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#startTimer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+    font-family: arial;
+    text-align: center;
+}
