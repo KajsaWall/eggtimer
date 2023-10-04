@@ -12,7 +12,6 @@ body {
     margin: 0;
     background-image: linear-gradient(#f8f7f7,#f7f7f7);    
     height: 100vh;
-    position: fixed;
 }
 
 main {
