@@ -6,6 +6,8 @@ let startingMinutes = 0; // Initial starting time in minutes
 let remainingTime = 0; // Variable to store the remaining time
 
 
+
+
 function renderStartTimer() {
 
     
@@ -31,23 +33,26 @@ function renderStartTimer() {
 }
 
 function toggleTimer() {
-    const countdownElement = document.getElementById("timer");
+    
 
-    if (!isTimerRunning) {
+    if (!isTimerRunning && (document.getElementById("start").textContent == "Start")) {
         // Timer starts or resumes
         document.getElementById("start").classList.add("pause");
 
-        document.getElementById("start").textContent = "Restart";
+        document.getElementById("start").textContent = "Pause";
         isTimerRunning = true;
 
         if (remainingTime === 0) {
             // If no remaining time, use the initial starting time
             startingMinutes = selectedCombination.message;
-        }
+            remainingTime = startingMinutes * 60;
 
-        remainingTime = startingMinutes * 60; // Reset remainingTime to the initial value
+        } 
 
+        const countdownElement = document.getElementById("timer");
+        
         function updateCountdown() {
+            
             let minutes = Math.floor(remainingTime / 60);
             let seconds = remainingTime % 60;
 
@@ -64,14 +69,28 @@ function toggleTimer() {
                 renderDoneTimer();
             }
         }
-
-        updateCountdown(); // Initial call to display the time immediately
+        
+        //updateCountdown(); // Initial call to display the time immediately
         timerInterval = setInterval(updateCountdown, 1000);
-    } else {
-        // Timer pauses
-        document.getElementById("start").textContent = "Start";
-        clearInterval(timerInterval); // Clear the interval when pausing
-        isTimerRunning = false;
-        document.getElementById("start").classList.remove("pause");
-    }
+
+        document.getElementById("start").addEventListener("click", function() {
+            if (isTimerRunning) {
+                console.log("pausat");
+                clearInterval(timerInterval); // Pause the timer by clearing the interval
+                document.getElementById("start").textContent = "Resume";
+                document.getElementById("start").classList.remove("pause");
+
+            } else {
+                console.log("resume");
+                timerInterval = setInterval(updateCountdown, 1000); // Resume the timer
+                document.getElementById("start").textContent = "Pause";
+                document.getElementById("start").classList.add("pause");
+            }
+            isTimerRunning = !isTimerRunning; // Toggle the timer state
+        });
+        
+    };
+    
 }
+
+
