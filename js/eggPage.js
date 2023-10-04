@@ -63,7 +63,7 @@ function renderEggPage() {
             <div>
                 <div>
                     <button id="s">S</button>
-                    <p><50g</p>
+                    <p>< 50g</p>
                 </div>
                 <div>
                     <button id="m">M</button>
@@ -71,7 +71,7 @@ function renderEggPage() {
                 </div>
                 <div>
                     <button id="l">L</button>
-                    <p>>70g</p>
+                    <p>> 70g</p>
                 </div>
             </div>
         </div>
