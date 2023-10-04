@@ -12,6 +12,7 @@ body {
     margin: 0;
     background-image: linear-gradient(#f8f7f7,#f7f7f7);    
     height: 100vh;
+    position: fixed;
 }
 
 main {
@@ -20,7 +21,7 @@ main {
 
 header {
     font-family: Sigmar One;
-    margin-top: 0px;
+    margin-top: 50px;
     width: 110%;
     align-self: center;
     position: fixed;
