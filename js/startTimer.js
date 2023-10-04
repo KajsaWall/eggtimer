@@ -36,6 +36,7 @@ function toggleTimer() {
     if (!isTimerRunning) {
         // Timer starts or resumes
         document.getElementById("start").classList.add("pause");
+
         document.getElementById("start").textContent = "Stop";
         isTimerRunning = true;
 
