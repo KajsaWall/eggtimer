@@ -27,6 +27,7 @@
     margin-top: 25px;
     font-family: Mada;
 }
+/*
 
 #bigEggImage {
     height: 400px;
@@ -36,6 +37,38 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+*/
+
+#biggEggImage {
+    height: 400px;
+    width: 350px;
+    display: flex;
+}
+
+.egg {
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    background-image: url("../Media/egg.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    height: 400px;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+    width: 350px;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
 }
 
 #startTimer {

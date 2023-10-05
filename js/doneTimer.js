@@ -9,7 +9,9 @@ function renderDoneTimer () {
     document.querySelector("main").innerHTML = `
     
     <div id="startTimer">
-        <div id="bigEggImage"></div>
+        <div id="bigEggImage">
+            <div class="egg"></div>
+        </div>
         <p id="timer">00:00</p>
         <button id="done" class="blinkingButton">Done</button>
     </div>

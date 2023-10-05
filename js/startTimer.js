@@ -22,7 +22,9 @@ function renderStartTimer() {
     document.querySelector("main").innerHTML = `
     <div id="backButton"> < </div>
     <div id="startTimer">
-        <div id="bigEggImage"></div>
+        <div id="bigEggImage">
+            <div class="egg"></div>
+        </div>
         <p id="timer">${startTime + ":00"}</p>
         <button id="start">Start</button>
     </div>
@@ -33,10 +35,11 @@ function renderStartTimer() {
 }
 
 function toggleTimer() {
-    
+    let eggImage = document.querySelector(".egg");
 
     if (!isTimerRunning && (document.getElementById("start").textContent == "Start")) {
         // Timer starts or resumes
+        eggImage.classList.add("egg", "bounce");
         document.getElementById("start").classList.add("pause");
 
         document.getElementById("start").textContent = "Pause";
@@ -77,12 +80,14 @@ function toggleTimer() {
             if (isTimerRunning) {
                 console.log("pausat");
                 clearInterval(timerInterval); // Pause the timer by clearing the interval
+                eggImage.classList.remove("bounce");
                 document.getElementById("start").textContent = "Resume";
                 document.getElementById("start").classList.remove("pause");
 
             } else {
                 console.log("resume");
                 timerInterval = setInterval(updateCountdown, 1000); // Resume the timer
+                eggImage.classList.add("egg", "bounce");
                 document.getElementById("start").textContent = "Pause";
                 document.getElementById("start").classList.add("pause");
             }
